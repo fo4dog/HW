@@ -3,11 +3,11 @@ klasses = ['9А', '7В', '9Б', '9В', '8Б', '10А', '10Б', '9А']
 
 
 def check_gen(tutors: list, klasses: list):
-    for child in range(0, len(tutors)+1):
+    for child in range(0, len(tutors)):
         if child + 1 > len(klasses):
-            yield (tutors[child], None)
+            yield tutors[child], None
         else:
-            yield (tutors[child], klasses[child])
+            yield tutors[child], klasses[child]
 generator = check_gen(tutors, klasses)
 print(type(generator))
 # добавьте здесь доказательство, что создали именно генератор

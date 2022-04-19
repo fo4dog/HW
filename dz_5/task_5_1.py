@@ -1,4 +1,4 @@
-def odd_nums(number: int) -> int:
+def odd_nums(number: int):
     """Генератор, возвращающий по очереди нечетные целые числа от 1 до number (включительно)"""
     for num in range(1, number + 1, 2):
         yield num

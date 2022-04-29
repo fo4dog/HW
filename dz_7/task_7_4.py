@@ -23,9 +23,10 @@ def stats(cur_dir):
             next_dir = os.path.join(cur_dir, file)
             stats(next_dir)
 
-
 if __name__ == "__main__":
-    BASE_DIR = os.path.dirname(os.path.abspath(sys.argv[1]))
-
+    if len(sys.argv) == 2:
+        BASE_DIR = os.path.dirname(os.path.abspath(sys.argv[1]))
+    else:
+        BASE_DIR = os.getcwd()
     stats(BASE_DIR)
     print(file_sizes)

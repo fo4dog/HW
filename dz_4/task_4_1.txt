@@ -1,0 +1,28 @@
+1) Проверка
+C:\Users\72499>pip show pillow 
+WARNING: Package(s) not found: pillow 
+
+2) Установка самой свежей версии
+C:\Users\72499>pip install pillow
+Collecting pillow
+  Downloading Pillow-9.1.0-cp310-cp310-win_amd64.whl (3.3 MB)
+     ---------------------------------------- 3.3/3.3 MB 718.2 kB/s eta 0:00:00
+Installing collected packages: pillow
+Successfully installed pillow-9.1.0
+
+3) Создание и активация виртуального окружения
+C:\Users\72499>python -m venv virt_hw_lesson_4
+C:\Users\72499>"virt_hw_lesson_4/Scripts/activate.bat"
+(virt_hw_lesson_4) C:\Users\72499>pip show pillow
+WARNING: Package(s) not found: pillow
+
+4) Установка в виртуальное окружение не последней версии pillow
+(virt_hw_lesson_4) C:\Users\72499>pip install pillow==8.4
+Collecting pillow==8.4
+  Downloading Pillow-8.4.0-cp310-cp310-win_amd64.whl (3.2 MB)
+     ---------------------------------------- 3.2/3.2 MB 1.5 MB/s eta 0:00:00
+Installing collected packages: pillow
+Successfully installed pillow-8.4.0
+
+5) Деактивация
+(virt_hw_lesson_4) C:\Users\72499>deactivate
